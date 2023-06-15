@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Film from "@/components/Film";
+import Films from "@/components/Films";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,7 +12,7 @@ export default function Home({ films }) {
       <h1> Films </h1>
       <Link href="/film">
         {films.map((film) => {
-          return <Film key={film.id} film={film} />;
+          return <Films key={film.id} film={film} />;
         })}
       </Link>
     </main>
