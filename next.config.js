@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "lereacteur-bootcamp-api.herokuapp.com",
+        hostname: "image.tmdb.org",
       },
     ],
   },
