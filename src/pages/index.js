@@ -3,10 +3,7 @@ import { Inter } from "next/font/google";
 import Films from "@/components/Films";
 import Movie from "@/models/Movie";
 import connectPageToDb from "@/utils/connectPageToDb";
-
-const inter = Inter({ subsets: ["latin"] });
 import axios from "axios";
-import Movie from "@/models/Movie";
 
 export default function Home({ films }) {
   return (
@@ -29,7 +26,7 @@ export const getServerSideProps = async () => {
 
   return {
     props: {
-      movies: JSON.parse(JSON.stringify(movieData)),
+      films: JSON.parse(JSON.stringify(movieData)),
     },
   };
 };

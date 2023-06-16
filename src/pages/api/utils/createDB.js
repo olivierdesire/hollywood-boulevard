@@ -1,9 +1,9 @@
-// -> créer le json
 import data from "@/assets/data.json";
 import Movie from "@/models/Movie";
 import connectRouteToDb from "@/middlewares/connectDB";
 
 const handler = async (req, res) => {
+  console.log("test");
   if (req.method === "GET") {
     await Movie.insertMany(data);
     res.json({ message: "DB created" });
